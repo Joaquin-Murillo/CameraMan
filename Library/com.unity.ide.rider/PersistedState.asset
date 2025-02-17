@@ -13,8 +13,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
+<<<<<<< HEAD
   lastWriteTicks: -8584617905601972899
 =======
   lastWriteTicks: -8584623811530769657
 >>>>>>> origin/Second-UI
   manifestJsonLastWriteTicks: -8584629719070668874
+=======
+  lastWriteTicks: -8584623047443904391
+  manifestJsonLastWriteTicks: -8584626534361249791
+>>>>>>> upstream/First-UI
