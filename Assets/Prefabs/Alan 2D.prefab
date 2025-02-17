@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 3192104761565675442}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.019, y: -1.259, z: 0}
+  m_LocalPosition: {x: -0.032, y: -1.559, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -106,11 +106,10 @@ GameObject:
   - component: {fileID: 8259884087431677002}
   - component: {fileID: 6071922347518109154}
   - component: {fileID: 6038644587680399724}
-  - component: {fileID: 6457078322653255115}
   - component: {fileID: 552585914914533053}
   - component: {fileID: 2814611547467819697}
   - component: {fileID: 3596954066796572490}
-  - component: {fileID: 3356427787374140051}
+  - component: {fileID: 5754657939547598030}
   m_Layer: 0
   m_Name: Alan 2D
   m_TagString: Untagged
@@ -128,7 +127,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.19, y: 0, z: 0}
-  m_LocalScale: {x: 3.04, y: 3.04, z: 3.04}
+  m_LocalScale: {x: 2.17, y: 2.17, z: 2.17}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8109734456584472154}
@@ -151,7 +150,7 @@ MonoBehaviour:
   groundCheckPosition: {fileID: 5904847835446721164}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
   holdingOverrideController: {fileID: 22100000, guid: a3b12a9e923584487a8fc503840b25e3, type: 2}
 --- !u!50 &6038644587680399724
 Rigidbody2D:
@@ -180,20 +179,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &6457078322653255115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8798396313193754910}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a917be4d8f744a03baecebe05760a2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  alan: {fileID: 0}
-  objectProjection: {fileID: 0}
 --- !u!58 &552585914914533053
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -261,7 +246,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.010253586, y: 0.023508638}
+  m_Offset: {x: -0.012066654, y: 0.023508638}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -272,7 +257,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.19574927, y: 0.041092917}
+  m_Size: {x: 0.07114498, y: 0.041092917}
   m_EdgeRadius: 0
 --- !u!61 &3596954066796572490
 BoxCollider2D:
@@ -306,7 +291,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0049907714, y: 0.43354458}
+  m_Offset: {x: -0.011110123, y: 0.43354458}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -317,29 +302,23 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.29287776, y: 0.8516966}
+  m_Size: {x: 0.18167716, y: 0.8516966}
   m_EdgeRadius: 0
---- !u!95 &3356427787374140051
-Animator:
-  serializedVersion: 5
+--- !u!114 &5754657939547598030
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8798396313193754910}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 63b11b92f232a3f41a968317dc36468c, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfcbf4f69711b4a9a92f55dc1ec02f3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectedWallTransform: {fileID: 0}
+  Alan: {fileID: 0}
+  holdPosition2D: {fileID: 8962851567322296020}
 --- !u!1001 &199824321706091144
 PrefabInstance:
   m_ObjectHideFlags: 0

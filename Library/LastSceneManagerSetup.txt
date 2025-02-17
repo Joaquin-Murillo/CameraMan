@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/MainMenu.unity
+=======
+- path: Assets/Scenes/Level Moving.unity
+>>>>>>> origin/Second-UI
   isLoaded: 1
   isActive: 1
   isSubScene: 0
